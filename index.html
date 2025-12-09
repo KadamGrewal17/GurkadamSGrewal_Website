@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gurkadam Singh Grewal | Portfolio</title>
+  <meta name="description" content="Portfolio of Gurkadam Singh Grewal, final-year student at Coventry University. Showcasing GitHub projects, skills, and experience." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gurkadam Singh Grewal | Portfolio" />
+  <meta property="og:description" content="Final-year student at Coventry University. Projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Gurkadam Singh Grewal</span>
+      </a>
+
+      <div class="nav-links">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙 Theme</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card reveal">
+        <div class="badge-row">
+          <span class="badge">Final-year Student</span>
+          <span class="badge">Coventry University</span>
+          <span class="badge">Software / Computing</span>
+        </div>
+
+        <h1>
+          Hi, I’m
+          <span class="gradient-text">Gurkadam Singh Grewal</span>.
+          <br />
+          I build thoughtful, modern software.
+        </h1>
+
+        <p class="hero-sub">
+          I’m a 3rd year (final-year) student at Coventry University, focused on building reliable, user-friendly projects.
+          This site showcases my GitHub work, technical interests, and what I’m currently learning.
+        </p>
+
+        <div class="hero-cta">
+          <!-- Replace YOUR_GITHUB with your handle -->
+          <a class="btn primary" id="githubBtn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">
+            🔗 View GitHub
+          </a>
+          <a class="btn" href="#projects">🚀 Explore Projects</a>
+          <a class="btn" href="#contact">✉️ Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="hero-side reveal">
+        <div class="stat">
+          <div class="stat-k">Focus Areas</div>
+          <div class="stat-v">Full-stack • Clean UI • Practical Systems</div>
+        </div>
+        <div class="stat">
+          <div class="stat-k">Currently Learning</div>
+          <div class="stat-v">Cloud, scalable backends, modern frontend patterns</div>
+        </div>
+        <div class="stat">
+          <div class="stat-k">Looking For</div>
+          <div class="stat-v">Graduate roles • Internships • Collaboration</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p class="section-sub">A quick snapshot of who I am and what I enjoy building.</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="about-grid">
+        <div class="panel reveal">
+          <h3 class="no-top-margin">Background</h3>
+          <p class="muted mb-14">
+            I’m Gurkadam Singh Grewal, a final-year student at Coventry University.
+            I enjoy creating projects that balance performance, clarity, and good user experience.
+          </p>
+          <ul class="about-list">
+            <li>Strong interest in real-world, portfolio-ready applications.</li>
+            <li>Comfortable working across frontend, backend, and APIs.</li>
+            <li>Motivated by clean architecture and thoughtful design decisions.</li>
+          </ul>
+        </div>
+
+        <div class="panel reveal">
+          <h3 class="no-top-margin">Highlights</h3>
+          <div class="skill-grid two-col">
+            <div class="skill">
+              <h4>Problem Solving</h4>
+              <p>Structured approach to debugging and iteration.</p>
+            </div>
+            <div class="skill">
+              <h4>Teamwork</h4>
+              <p>Clear communication and practical collaboration.</p>
+            </div>
+            <div class="skill">
+              <h4>Product Thinking</h4>
+              <p>Building with users and outcomes in mind.</p>
+            </div>
+            <div class="skill">
+              <h4>Consistency</h4>
+              <p>Prefer simple, reliable, maintainable solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">Curated work from GitHub and personal builds.</p>
+        </div>
+
+        <div class="projects-toolbar">
+          <input class="input" id="projectSearch" type="search" placeholder="Search projects..." />
+          <select class="select" id="sortSelect">
+            <option value="featured">Sort: Featured</option>
+            <option value="stars">Sort: Stars</option>
+            <option value="updated">Sort: Recently Updated</option>
+            <option value="name">Sort: Name</option>
+          </select>
+          <button class="btn" id="loadGithubBtn" type="button">⬇️ Load from GitHub</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Default featured placeholders (replace these!) -->
+        <article class="project-card reveal" data-name="Smart Task Manager" data-stars="0" data-updated="2025-01-01">
+          <div class="project-top">
+            <div>
+              <h3 class="project-name">Smart Task Manager</h3>
+              <div class="project-meta">Featured • Web App</div>
+            </div>
+            <span class="tag">In Progress</span>
+          </div>
+          <p class="project-desc">
+            A productivity-focused task manager with filtering, analytics, and clean UI patterns.
+            Built to explore realistic product features and state management.
+          </p>
+          <div class="tag-row">
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Local Storage</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-name="API Dashboard" data-stars="0" data-updated="2025-01-01">
+          <div class="project-top">
+            <div>
+              <h3 class="project-name">API Dashboard</h3>
+              <div class="project-meta">Featured • Data UI</div>
+            </div>
+            <span class="tag">Showcase</span>
+          </div>
+          <p class="project-desc">
+            A responsive dashboard concept for visualizing API-driven metrics with a modern component layout.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Frontend</span>
+            <span class="tag">Design System</span>
+            <span class="tag">Charts</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-name="University Capstone" data-stars="0" data-updated="2025-01-01">
+          <div class="project-top">
+            <div>
+              <h3 class="project-name">University Capstone</h3>
+              <div class="project-meta">Final Year • Coventry University</div>
+            </div>
+            <span class="tag">Academic</span>
+          </div>
+          <p class="project-desc">
+            Your final-year highlight goes here. Add the goal, your role, and the measurable outcome.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Research</span>
+            <span class="tag">System Design</span>
+            <span class="tag">Implementation</span>
+          </div>
+          <div class="project-links">
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Repo</a>
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Tools and technologies I’m comfortable with (and growing in).</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="skill-grid">
+        <div class="skill reveal">
+          <h4>Languages</h4>
+          <p>JavaScript, Python, Java, SQL (edit to match your stack)</p>
+        </div>
+        <div class="skill reveal">
+          <h4>Frontend</h4>
+          <p>HTML, CSS, React, responsive design, accessibility basics</p>
+        </div>
+        <div class="skill reveal">
+          <h4>Backend</h4>
+          <p>Node.js, REST APIs, authentication patterns</p>
+        </div>
+        <div class="skill reveal">
+          <h4>Databases</h4>
+          <p>PostgreSQL / MySQL, schema design, query optimization fundamentals</p>
+        </div>
+        <div class="skill reveal">
+          <h4>Dev Tools</h4>
+          <p>Git/GitHub, Docker basics, CI/CD exposure</p>
+        </div>
+        <div class="skill reveal">
+          <h4>Soft Skills</h4>
+          <p>Communication, teamwork, documentation, iterative delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Let’s connect for opportunities, projects, or a quick chat.</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3 class="no-top-margin">Message</h3>
+          <p class="muted">
+            This is a simple contact layout. For a real form, connect it to Formspree,
+            Netlify Forms, or a small backend endpoint.
+          </p>
+          <div class="contact-row">
+            <a class="btn primary" href="mailto:your.email@example.com">📧 Email Me</a>
+            <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3 class="no-top-margin">Quick Info</h3>
+          <div class="stat transparent">
+            <div class="stat-k">Name</div>
+            <div class="stat-v">Gurkadam Singh Grewal</div>
+          </div>
+          <div class="stat transparent">
+            <div class="stat-k">Education</div>
+            <div class="stat-v">Final-year student, Coventry University</div>
+          </div>
+          <div class="stat transparent">
+            <div class="stat-k">Location</div>
+            <div class="stat-v">UK (edit as desired)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="reveal">
+      <div class="divider"></div>
+      <div class="footer-row">
+        <span>© <span id="year"></span> Gurkadam Singh Grewal</span>
+        <span class="muted">Built with a simple, modern template.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
