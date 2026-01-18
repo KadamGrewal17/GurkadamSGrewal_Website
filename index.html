@@ -1,316 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gurkadam Singh Grewal | Portfolio</title>
-  <meta name="description" content="Portfolio of Gurkadam Singh Grewal, final-year student at Coventry University. Showcasing GitHub projects, skills, and experience." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Gurkadam Singh Grewal | Portfolio" />
-  <meta property="og:description" content="Final-year student at Coventry University. Projects, skills, and contact." />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurkadam Singh Grewal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- NAV -->
-  <div class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Gurkadam Singh Grewal</span>
-      </a>
-
-      <div class="nav-links">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#skills">Skills</a>
-        <a class="nav-link" href="#contact">Contact</a>
-        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙 Theme</button>
-      </div>
-    </div>
-  </div>
-
-  <main id="top" class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-card reveal">
-        <div class="badge-row">
-          <span class="badge">Final-year Student</span>
-          <span class="badge">Coventry University</span>
-          <span class="badge">Software / Computing</span>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Gurkadam Singh Grewal">
+                <span class="nav-logo-short">GSG</span>
+                <span class="nav-logo-full">Gurkadam Singh Grewal</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+    </nav>
 
-        <h1>
-          Hi, I’m
-          <span class="gradient-text">Gurkadam Singh Grewal</span>.
-          <br />
-          I build thoughtful, modern software.
-        </h1>
-
-        <p class="hero-sub">
-          I’m a 3rd year (final-year) student at Coventry University, focused on building reliable, user-friendly projects.
-          This site showcases my GitHub work, technical interests, and what I’m currently learning.
-        </p>
-
-        <div class="hero-cta">
-          <!-- Replace YOUR_GITHUB with your handle -->
-          <a class="btn primary" id="githubBtn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">
-            🔗 View GitHub
-          </a>
-          <a class="btn" href="#projects">🚀 Explore Projects</a>
-          <a class="btn" href="#contact">✉️ Contact Me</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <a href="#about" aria-label="About Me">
+                    <img
+                        src="images/me.JPG"
+                        alt="Gurkadam Singh Grewal"
+                        class="hero-avatar"
+                    />
+                </a>
+            </div>
+            <h1 class="hero-title">Gurkadam Singh Grewal</h1>
+            <p class="hero-subtitle">Aspiring Software Engineer/Developer</p>
+            <p class="hero-description">
+                Passionate about creating innovative solutions and building impactful software that makes a difference
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+            <div class="hero-social">
+                <a href="https://github.com/KadamGrewal17" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/kadamgrewal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:kadamgrewal@icloud.com" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
-
-      <aside class="hero-side reveal">
-        <div class="stat">
-          <div class="stat-k">Focus Areas</div>
-          <div class="stat-v">Full-stack • Clean UI • Practical Systems</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Currently Learning</div>
-          <div class="stat-v">Cloud, scalable backends, modern frontend patterns</div>
-        </div>
-        <div class="stat">
-          <div class="stat-k">Looking For</div>
-          <div class="stat-v">Graduate roles • Internships • Collaboration</div>
-        </div>
-      </aside>
     </section>
 
-    <!-- ABOUT -->
+    <!-- About Section -->
     <section id="about" class="section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">About</h2>
-          <p class="section-sub">A quick snapshot of who I am and what I enjoy building.</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hi! I'm Gurkadam Singh Grewal, an aspiring Software Engineer/Developer with a passion for 
+                        creating elegant solutions to complex problems. I love learning new technologies and 
+                        building projects that make a real-world impact.
+                    </p>
+                    <p>
+                        My journey in software development has been driven by curiosity and a desire to continuously 
+                        improve. I believe in writing clean, maintainable code and following best practices to 
+                        deliver high-quality software.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                        projects, or staying up-to-date with the latest industry trends.
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Currently pursing BSc Software Engineering Degree at Coventry University</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Full-stack development with modern frameworks and technologies</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Commitment</h3>
+                        <p>Dedicated to continuous learning and professional growth</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="divider"></div>
-
-      <div class="about-grid">
-        <div class="panel reveal">
-          <h3 class="no-top-margin">Background</h3>
-          <p class="muted mb-14">
-            I’m Gurkadam Singh Grewal, a final-year student at Coventry University.
-            I enjoy creating projects that balance performance, clarity, and good user experience.
-          </p>
-          <ul class="about-list">
-            <li>Strong interest in real-world, portfolio-ready applications.</li>
-            <li>Comfortable working across frontend, backend, and APIs.</li>
-            <li>Motivated by clean architecture and thoughtful design decisions.</li>
-          </ul>
-        </div>
-
-        <div class="panel reveal">
-          <h3 class="no-top-margin">Highlights</h3>
-          <div class="skill-grid two-col">
-            <div class="skill">
-              <h4>Problem Solving</h4>
-              <p>Structured approach to debugging and iteration.</p>
-            </div>
-            <div class="skill">
-              <h4>Teamwork</h4>
-              <p>Clear communication and practical collaboration.</p>
-            </div>
-            <div class="skill">
-              <h4>Product Thinking</h4>
-              <p>Building with users and outcomes in mind.</p>
-            </div>
-            <div class="skill">
-              <h4>Consistency</h4>
-              <p>Prefer simple, reliable, maintainable solutions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">Projects</h2>
-          <p class="section-sub">Curated work from GitHub and personal builds.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <div class="experience-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Software Development | Work Experience (Remote)</h3>
+                                <p class="company">Ecatenate Ltd.</p>
+                            </div>
+                        </div>
+                        <div class="experience-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            Jun 2022 - Jul 2022
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Developed and maintained web applications using modern frameworks</li>
+                        <li>Collaborated with senior developers on feature implementation</li>
+                        <li>Participated in code reviews and contributed to team best practices</li>
+                        <li>Worked with agile methodologies and sprint planning</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <div class="experience-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Software Engineering | Work Experience </h3>
+                                <p class="company">Weetabix</p>
+                            </div>
+                        </div>
+                        <div class="experience-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            13th - 17th Jan 2025
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Led a team of 4 students in developing a full-stack application</li>
+                        <li>Managed project timeline and coordinated team efforts</li>
+                        <li>Implemented CI/CD pipeline and version control practices</li>
+                        <li>Presented project to faculty and industry professionals</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <div class="experience-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Teaching Assistant</h3>
+                                <p class="company">Kumon Corby Study Centre</p>
+                            </div>
+                        </div>
+                        <div class="experience-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            May 2021 - Present
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Built custom websites and applications for local businesses</li>
+                        <li>Provided technical consultation and ongoing support</li>
+                        <li>Managed client relationships and project requirements</li>
+                        <li>Delivered projects on time and within budget</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <div class="experience-icon">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
-
-        <div class="projects-toolbar">
-          <input class="input" id="projectSearch" type="search" placeholder="Search projects..." />
-          <select class="select" id="sortSelect">
-            <option value="featured">Sort: Featured</option>
-            <option value="stars">Sort: Stars</option>
-            <option value="updated">Sort: Recently Updated</option>
-            <option value="name">Sort: Name</option>
-          </select>
-          <button class="btn" id="loadGithubBtn" type="button">⬇️ Load from GitHub</button>
-        </div>
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="projects-grid" id="projectsGrid">
-        <!-- Default featured placeholders (replace these!) -->
-        <article class="project-card reveal" data-name="Smart Task Manager" data-stars="0" data-updated="2025-01-01">
-          <div class="project-top">
-            <div>
-              <h3 class="project-name">Smart Task Manager</h3>
-              <div class="project-meta">Featured • Web App</div>
-            </div>
-            <span class="tag">In Progress</span>
-          </div>
-          <p class="project-desc">
-            A productivity-focused task manager with filtering, analytics, and clean UI patterns.
-            Built to explore realistic product features and state management.
-          </p>
-          <div class="tag-row">
-            <span class="tag">JavaScript</span>
-            <span class="tag">UI/UX</span>
-            <span class="tag">Local Storage</span>
-          </div>
-          <div class="project-links">
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-name="API Dashboard" data-stars="0" data-updated="2025-01-01">
-          <div class="project-top">
-            <div>
-              <h3 class="project-name">API Dashboard</h3>
-              <div class="project-meta">Featured • Data UI</div>
-            </div>
-            <span class="tag">Showcase</span>
-          </div>
-          <p class="project-desc">
-            A responsive dashboard concept for visualizing API-driven metrics with a modern component layout.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Frontend</span>
-            <span class="tag">Design System</span>
-            <span class="tag">Charts</span>
-          </div>
-          <div class="project-links">
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-name="University Capstone" data-stars="0" data-updated="2025-01-01">
-          <div class="project-top">
-            <div>
-              <h3 class="project-name">University Capstone</h3>
-              <div class="project-meta">Final Year • Coventry University</div>
-            </div>
-            <span class="tag">Academic</span>
-          </div>
-          <p class="project-desc">
-            Your final-year highlight goes here. Add the goal, your role, and the measurable outcome.
-          </p>
-          <div class="tag-row">
-            <span class="tag">Research</span>
-            <span class="tag">System Design</span>
-            <span class="tag">Implementation</span>
-          </div>
-          <div class="project-links">
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Repo</a>
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Report</a>
-          </div>
-        </article>
-      </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">Skills</h2>
-          <p class="section-sub">Tools and technologies I’m comfortable with (and growing in).</p>
-        </div>
-      </div>
-      <div class="divider"></div>
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>TypeScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Tailwind CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="skill-grid">
-        <div class="skill reveal">
-          <h4>Languages</h4>
-          <p>JavaScript, Python, Java, SQL (edit to match your stack)</p>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>REST APIs</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git/GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Linux</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Docker</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Agile/Scrum</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill reveal">
-          <h4>Frontend</h4>
-          <p>HTML, CSS, React, responsive design, accessibility basics</p>
-        </div>
-        <div class="skill reveal">
-          <h4>Backend</h4>
-          <p>Node.js, REST APIs, authentication patterns</p>
-        </div>
-        <div class="skill reveal">
-          <h4>Databases</h4>
-          <p>PostgreSQL / MySQL, schema design, query optimization fundamentals</p>
-        </div>
-        <div class="skill reveal">
-          <h4>Dev Tools</h4>
-          <p>Git/GitHub, Docker basics, CI/CD exposure</p>
-        </div>
-        <div class="skill reveal">
-          <h4>Soft Skills</h4>
-          <p>Communication, teamwork, documentation, iterative delivery</p>
-        </div>
-      </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">
+                Here are some of my recent projects that showcase my skills and passion for development
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-Time MQTT Cryptocurrency Tracker</h3>
+                        <p>A university project using the MQTT protocol for eﬃcient messaging, allowing the
+                            program to receive live price updates. Using an implemented publish/subscribe model for data transmission to multiple clients</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KadamGrewal17/Profit-Pioneers" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gurkadam Singh Grewal | Website</h3>
+                        <p>The creation of my public website that shows my current projects</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Javascript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KadamGrewal17/GurkadamSGrewal_Website" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://gurkadamsinghgrewal.com" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Komodo Hub Website</h3>
+                        <p>A university group led project, creation of a website developement using Python/Flask Stack</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite3</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KadamGrewal17/Komodo-Hub-Website" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>University Web Developement</h3>
+                        <p>A business tracker that manages the sales & expenditures of a company. Applying roles and permissions to access the dashboard. Using XAMPP basics and development of PHP, MySQL etc.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>XAMPP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KadamGrewal17/University-Web-Development-Project" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure E-Commerce Web Development</h3>
+                        <p>University Task, creating a basic e-commerce platform that uses secure development practises, using Dynamic and Static tools such as ZAP Proxy, to find security issues.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project5" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Code Snippet Manager</h3>
+                        <p>A developer tool for organizing and sharing code snippets with syntax highlighting, tagging, and search functionality.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project6" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://project6-demo.com" target="_blank" rel="noopener noreferrer">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="section">
-      <div class="section-head">
-        <div>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-sub">Let’s connect for opportunities, projects, or a quick chat.</p>
-        </div>
-      </div>
-      <div class="divider"></div>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                I'm always open to discussing new opportunities, collaborations, or just having a chat about technology
+            </p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:kadamgrewal@icloud.com">kadamgrewal@icloud.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/kadamgrewal/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kadamgrewal</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/KadamGrewal17" target="_blank" rel="noopener noreferrer">github.com/KadamGrewal17</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Open to Remote & On-site Opportunities</p>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="contact-grid">
-        <div class="contact-card reveal">
-          <h3 class="no-top-margin">Message</h3>
-          <p class="muted">
-            This is a simple contact layout. For a real form, connect it to Formspree,
-            Netlify Forms, or a small backend endpoint.
-          </p>
-          <div class="contact-row">
-            <a class="btn primary" href="mailto:your.email@example.com">📧 Email Me</a>
-            <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
-          </div>
+                <div class="contact-form-container">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div class="contact-card reveal">
-          <h3 class="no-top-margin">Quick Info</h3>
-          <div class="stat transparent">
-            <div class="stat-k">Name</div>
-            <div class="stat-v">Gurkadam Singh Grewal</div>
-          </div>
-          <div class="stat transparent">
-            <div class="stat-k">Education</div>
-            <div class="stat-v">Final-year student, Coventry University</div>
-          </div>
-          <div class="stat transparent">
-            <div class="stat-k">Location</div>
-            <div class="stat-v">UK (edit as desired)</div>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <footer class="reveal">
-      <div class="divider"></div>
-      <div class="footer-row">
-        <span>© <span id="year"></span> Gurkadam Singh Grewal</span>
-        <span class="muted">Built with a simple, modern template.</span>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-copyright">© 2026 Gurkadam Singh Grewal. All rights reserved</p>
+        </div>
     </footer>
-  </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
